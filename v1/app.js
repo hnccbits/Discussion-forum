@@ -38,34 +38,39 @@ app.get("/bit/new",function(req,res)
 {
 	res.render("html/new.ejs");
 });
- 
+
 app.post("/bit",function(req,res){
 
 	//get data from from
 	var question =req.body.question;
 	var newquestion={question:question};
-	
 
-	
+
+
 data.create(newquestion,function(err,newlycreated)
 {
 if(err)
 {
 	res.render("bit/new");
-	
+
 }else
 {
 res.redirect("/bit");
 }
 
 });
-	
-	
+
+
 });
+
+app.use('/login', (req, res) => {
+	res.render("html/login")
+})
+
 
 
 
 
 app.listen(3000,function(){
 	console.log("server is started");
-}); 
+});
