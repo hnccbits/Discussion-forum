@@ -25,6 +25,68 @@ body * {
             transform: rotate(0deg) translate3d(1, 0, 0);
   }
 }
+#Services {
+  background: #628CE5;
+  background: -webkit-linear-gradient(bottom, #628CE5, #FFFFFF);
+  background: -moz-linear-gradient(bottom, #628CE5, #FFFFFF);
+  background: linear-gradient(to top, #628CE5, #FFFFFF);
+  height: 65vh;
+}
+
+.service {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  padding-top: 50px;
+}
+
+.box1 {
+  background: white;
+  display: flex;
+  box-shadow:  28px 24px 61px -21px rgba(58,58,166,1);
+
+  max-width: 300px;
+  border-radius: 10px;
+  height: 150px;
+}
+.box1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.box2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.box1 i {
+  padding: 40px 10px;
+}
+.box1 p {
+  padding: 60px 18px;
+  font-size: 25px
+}
+.box2 {
+  background: white;
+  display: flex;
+    box-shadow:  28px 24px 61px -21px rgba(58,58,166,1);
+
+  max-width: 300px;
+  border-radius: 10px;
+  height: 150px;
+}
+.box2 i {
+  padding: 40px 10px;
+}
+.box2 p {
+  padding: 60px 18px;
+  font-size: 23px
+}
+.question {
+  text-align: center;
+}
+
+#question {
+  margin-top: 120px
+}
 
 #header {
   transition: all 0.5s;
