@@ -6,6 +6,7 @@ body {
   font-family: "Open Sans", Arial;
   text-align: center;
 }
+
 body * {
   font-weight: 300;
   margin: 0;
@@ -15,71 +16,126 @@ body * {
 @-webkit-keyframes bake-pie {
   from {
     -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
-            transform: rotate(0deg) translate3d(0, 0, 0);
+    transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
 
 @keyframes bake-pie {
   from {
     -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
-            transform: rotate(0deg) translate3d(1, 0, 0);
+    transform: rotate(0deg) translate3d(1, 0, 0);
   }
 }
+
 #Services {
   background: #628CE5;
   background: -webkit-linear-gradient(bottom, #628CE5, #FFFFFF);
   background: -moz-linear-gradient(bottom, #628CE5, #FFFFFF);
   background: linear-gradient(to top, #628CE5, #FFFFFF);
-  height: 65vh;
+
+}
+a{text-decoration:none!important;}
+ .fa-z {
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.social {
+    color: #4D045D;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.footer {
+  background-color: #4D045D;
+  color: white;
+}
+
+.gap{
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.address-info{
+  text-align: right;
+}
+
+.footer-copyright {
+    background-color: #000000;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.howWork p {
+  font-size: 25px;
+  padding-top: 30px;
 }
 
 .service {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 0px;
   padding-top: 50px;
+  flex-wrap: wrap;
+}
+.service.one {
+  margin: 0;
+  padding: 0 0 50px 0;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .box1 {
   background: white;
   display: flex;
-  box-shadow:  28px 24px 61px -21px rgba(58,58,166,1);
-
+  box-shadow: 28px 24px 61px -21px rgba(58, 58, 166, 1);
   max-width: 300px;
   border-radius: 10px;
   height: 150px;
 }
+
 .box1:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 .box2:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 .box1 i {
   padding: 40px 10px;
 }
+
 .box1 p {
   padding: 60px 18px;
   font-size: 25px
 }
+
 .box2 {
   background: white;
   display: flex;
-    box-shadow:  28px 24px 61px -21px rgba(58,58,166,1);
-
+  box-shadow: 28px 24px 61px -21px rgba(58, 58, 166, 1);
   max-width: 300px;
   border-radius: 10px;
   height: 150px;
 }
+
 .box2 i {
   padding: 40px 10px;
 }
+
 .box2 p {
   padding: 60px 18px;
   font-size: 23px
 }
+
 .question {
   text-align: center;
 }
@@ -270,7 +326,6 @@ body * {
   }
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -327,7 +382,6 @@ body * {
 #sidebar .title {
   line-height: 65px;
   text-align: center;
-
   font-size: 25px;
   font-weight: 600;
   color: #f2f2f2;
@@ -390,7 +444,6 @@ body * {
   margin: 0 5px;
   font-size: 18px;
   color: #fff;
-
   border-radius: 5px;
   border: 1.3px solid #fff;
   transition: all 0.3s ease;
@@ -443,21 +496,25 @@ label.menu-btn {
 .pie-chart {
   font-family: "Open Sans", Arial;
 }
+
 .pie-chart--wrapper {
   width: 400px;
   margin: 30px auto;
   text-align: center;
 }
+
 .pie-chart__pie, .pie-chart__legend {
   display: inline-block;
   vertical-align: top;
 }
+
 .pie-chart__pie {
   position: relative;
   height: 200px;
   width: 200px;
   margin: 10px auto 35px;
 }
+
 .pie-chart__pie::before {
   content: "";
   display: block;
@@ -470,6 +527,7 @@ label.menu-btn {
   top: 50px;
   left: 50px;
 }
+
 .pie-chart__pie::after {
   content: "";
   display: block;
@@ -487,8 +545,9 @@ label.menu-btn {
   height: 200px;
   clip: rect(0px, 200px, 200px, 100px);
   -webkit-animation: bake-pie 1s;
-          animation: bake-pie 1s;
+  animation: bake-pie 1s;
 }
+
 .slice span {
   display: block;
   position: absolute;
@@ -513,15 +572,18 @@ label.menu-btn {
   text-align: left;
   width: 65%;
 }
+
 .pie-chart__legend li {
   height: 1.25em;
   margin-bottom: 0.7em;
   padding-left: 0.5em;
   border-left: 1.25em solid black;
 }
+
 .pie-chart__legend em {
   font-style: normal;
 }
+
 .pie-chart__legend span {
   float: right;
 }
@@ -531,12 +593,13 @@ label.menu-btn {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
 }
+
 @media (max-width: 500px) {
   .pie-charts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
