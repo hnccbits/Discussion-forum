@@ -27,13 +27,13 @@ body * {
   }
 }
 
-#Services {
+/* #Services {
   background: #628CE5;
   background: -webkit-linear-gradient(bottom, #628CE5, #FFFFFF);
   background: -moz-linear-gradient(bottom, #628CE5, #FFFFFF);
   background: linear-gradient(to top, #628CE5, #FFFFFF);
 
-}
+} */
 a{text-decoration:none!important;}
  .fa-z {
     color: white;
@@ -71,14 +71,16 @@ a{text-decoration:none!important;}
 }
 
 .howWork p {
-  font-size: 25px;
+  font-size: 40px;
   padding-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
 }
 
 .service {
   display: flex;
   justify-content: space-around;
-  margin-top: 0px;
+  margin-top: 80px;
   padding-top: 50px;
   flex-wrap: wrap;
 }
@@ -93,19 +95,19 @@ a{text-decoration:none!important;}
 .box1 {
   background: white;
   display: flex;
-  box-shadow: 28px 24px 61px -21px rgba(58, 58, 166, 1);
+  box-shadow: 0px 0px 35px -11px rgba(58, 58, 166, 1);
   max-width: 300px;
   border-radius: 10px;
   height: 150px;
 }
 
 .box1:hover {
-  transform: scale(1.1);
   cursor: pointer;
+  box-shadow: 0px 0px 55px -11px rgba(58, 58, 166, 1);
 }
 
 .box2:hover {
-  transform: scale(1.1);
+    box-shadow: 0px 0px 55px -11px rgba(58, 58, 166, 1);
   cursor: pointer;
 }
 
@@ -115,13 +117,14 @@ a{text-decoration:none!important;}
 
 .box1 p {
   padding: 60px 18px;
-  font-size: 25px
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .box2 {
   background: white;
   display: flex;
-  box-shadow: 28px 24px 61px -21px rgba(58, 58, 166, 1);
+  box-shadow: 0px 0px 35px -11px rgba(58, 58, 166, 1);
   max-width: 300px;
   border-radius: 10px;
   height: 150px;
@@ -133,11 +136,13 @@ a{text-decoration:none!important;}
 
 .box2 p {
   padding: 60px 18px;
-  font-size: 23px
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.question {
-  text-align: center;
+.question img {
+  width: 300px;
+  height: auto;
 }
 
 #question {
